@@ -1,0 +1,5 @@
+Introduce Concept of:
+- Singleton
+- Static Classes
+- SceneManager
+- OnSceneLoaded
