@@ -3,3 +3,8 @@ Introduce Concept of:
 - Static Classes
 - SceneManager
 - OnSceneLoaded
+
+
+List of Unity Icons to use In DrawGizmoIcon
+
+https://gist.github.com/MattRix/c1f7840ae2419d8eb2ec0695448d4321
