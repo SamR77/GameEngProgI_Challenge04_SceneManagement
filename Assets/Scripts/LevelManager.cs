@@ -14,16 +14,10 @@ public class LevelManager : MonoBehaviour
     private string spawnPointName; // Store the spawn point name for use after the scene loads
 
 
-    public void LoadLevel(string sceneName)
+    public void LoadSceneWithSpawnPoint(string sceneName, string spawnPoint)
     {
-        Debug.Log($"Loading level: {sceneName}");
-        SceneManager.LoadScene(sceneName);
-    }
+        //Debug.Log($"Loading level: {sceneName}, with spawn point: {spawnPoint}");
 
-
-    public void LoadLevelWithSpawnPoint(string sceneName, string spawnPoint)
-    {
-        Debug.Log($"Loading level: {sceneName}, with spawn point: {spawnPoint}");
 
         // Store the spawn point name for use after the scene loads
         spawnPointName = spawnPoint;
@@ -34,11 +28,14 @@ public class LevelManager : MonoBehaviour
         // Load the scene
         SceneManager.LoadScene(sceneName);
     }
+
+
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log($"Scene {scene.name} loaded. Setting player position to spawn point: {spawnPointName}");
+        //Debug.Log($"Scene {scene.name} loaded. Setting player position to spawn point: {spawnPointName}");
 
-        // Attempt to set the player's position to the spawn point
+        // Set the player's position to the spawn point
         SetPlayerToSpawn(spawnPointName);
 
         // Unsubscribe from the callback to avoid repeated triggers
