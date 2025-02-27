@@ -18,15 +18,19 @@ public class LevelManager : MonoBehaviour
     {
         //Debug.Log($"Loading level: {sceneName}, with spawn point: {spawnPoint}");
 
-
         // Store the spawn point name for use after the scene loads
         spawnPointName = spawnPoint;
+
+        // Load the scene
+        SceneManager.LoadScene(sceneName);
+
+        
+
 
         // Subscribe to the sceneLoaded callback
         SceneManager.sceneLoaded += OnSceneLoaded;
 
-        // Load the scene
-        SceneManager.LoadScene(sceneName);
+
     }
 
 

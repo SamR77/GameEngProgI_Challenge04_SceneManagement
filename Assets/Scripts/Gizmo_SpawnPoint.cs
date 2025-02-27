@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class SpawnPointGizmo : MonoBehaviour
+public class Gizmo_SpawnPoint : MonoBehaviour
 {
     // This script adds a gizmo in the scene view for spawn points
 

@@ -3245,7 +3245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8070153369042041140, guid: 5045f34df8d637740b617956cd3dc169, type: 3}
       propertyPath: m_Name
-      value: SpawnPoint_West
+      value: SpawnPoint_East
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
